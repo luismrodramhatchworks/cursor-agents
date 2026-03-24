@@ -45,7 +45,7 @@
 
 .subtitle {
   max-width: 650px;
-  color: #111827;
+  color: var(--muted);
   line-height: 1.6;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .statLabel {
-  color: #0f172a;
+  color: var(--muted);
   font-size: 0.85rem;
 }
 
@@ -78,8 +78,8 @@
 }
 
 .surface {
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid #dce3f3;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
   border-radius: 18px;
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -87,7 +87,7 @@
 
 .surfaceHeader {
   padding: 1rem 1.25rem 0.5rem;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,8 +113,8 @@
 }
 
 .pillMuted {
-  background: #e2e8f0;
-  color: #0f172a;
+  background: var(--pill-muted-bg);
+  color: var(--pill-muted-fg);
 }
 
 .composer {
@@ -136,7 +136,7 @@
   padding: 0.9rem 1rem;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: #ffffff;
+  background: var(--input-bg);
   color: var(--ink);
   transition: border 0.2s ease, box-shadow 0.2s ease;
 }
@@ -177,8 +177,8 @@
 
 .filterButton {
   border: 1px solid var(--border);
-  background: #ffffff;
-  color: #0b1220;
+  background: var(--filter-bg);
+  color: var(--filter-fg);
   border-radius: 10px;
   padding: 0.55rem 0.9rem;
   cursor: pointer;
@@ -244,7 +244,7 @@
 }
 
 .meta {
-  color: #1f2937;
+  color: var(--muted);
   font-size: 0.95rem;
 }
 
@@ -258,7 +258,7 @@
   padding: 0.5rem 0.75rem;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: #f8fafc;
+  background: var(--button-bg);
   color: var(--ink);
   font-weight: 700;
   cursor: pointer;
@@ -266,7 +266,7 @@
 }
 
 .iconButton:hover {
-  background: #e2e8f0;
+  background: var(--button-hover-bg);
   transform: translateY(-1px);
 }
 
@@ -282,22 +282,24 @@
   padding: 0.75rem 0.9rem;
   border-radius: 10px;
   border: 1px solid var(--border);
+  background: var(--input-bg);
+  color: var(--ink);
   width: 100%;
 }
 
 .empty {
   padding: 1.25rem;
   text-align: center;
-  color: #0b1220;
-  background: #f8fafc;
+  color: var(--ink);
+  background: var(--soft-bg);
   border: 1px dashed var(--border);
   border-radius: 14px;
 }
 
 .error {
-  background: rgba(239, 68, 68, 0.1);
-  border: 1px solid rgba(239, 68, 68, 0.5);
-  color: #7f1d1d;
+  background: var(--danger-soft);
+  border: 1px solid var(--danger-border);
+  color: var(--danger-fg);
   border-radius: 12px;
   padding: 0.75rem 1rem;
   font-weight: 700;
