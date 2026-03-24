@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+npm-debug.log
+*.log
+.git
+.vscode
+.idea
+Dockerfile*
+docker-compose*
+.env*
+coverage
+dist
+tmp
